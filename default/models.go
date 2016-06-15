@@ -151,9 +151,9 @@ func TeeShirtSizeToStringEnum(key TeeShirtSize) string {
 
 type Alert struct {
 	//Alert -- Alert object
-	Author  string `datastore:"author"`
-	Content string `datastore:"content"`
-	Date time.Time `datastore:"date"`
+	Author  string `json:"author"`
+	Content string `json:"content"`
+	Date time.Time `json:"date"`
 }
 
 type LatestAlert struct {
