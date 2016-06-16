@@ -84,3 +84,4 @@ func formatFilters(filters []ConferenceQueryForm) (string, []ConferenceQueryForm
 
 	return inequalityField, formattedFilters, nil
 }
+
