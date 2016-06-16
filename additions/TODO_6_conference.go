@@ -112,3 +112,4 @@ func (h *ConferenceApi) GetConference(r *http.Request, cr *ConfRequest) (*Confer
 	displayName := prof.DisplayName
 	return copyConferenceToForm(&conf, key.Encode(), displayName)
 }
+
