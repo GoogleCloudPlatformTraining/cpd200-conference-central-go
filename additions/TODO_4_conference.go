@@ -25,3 +25,4 @@ func (h *ConferenceApi) FilterPlayground(r *http.Request) (*ConferenceForms, err
 	}
 	return forms, nil
 }
+
