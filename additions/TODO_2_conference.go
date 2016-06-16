@@ -121,3 +121,4 @@ func (h *ConferenceApi) CreateConference(r *http.Request, cf *ConferenceForm) (*
 	//Create new conference.
 	return createConferenceObject(r, cf)
 }
+
