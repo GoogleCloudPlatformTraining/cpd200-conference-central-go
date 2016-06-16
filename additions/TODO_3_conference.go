@@ -60,3 +60,4 @@ func (h *ConferenceApi) GetConferencesCreated(r *http.Request) (*ConferenceForms
 	}
 	return forms, nil
 }
+
