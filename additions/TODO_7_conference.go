@@ -51,3 +51,4 @@ func (h *ConferenceApi) GetAnnouncement(r *http.Request) (*StringMessage, error)
 	}
 	return &StringMessage{Data: data}, nil
 }
+
