@@ -44,7 +44,7 @@ func root(w http.ResponseWriter, r *http.Request) {
 	// show up in a query.
 	// [START query]
 	q := datastore.NewQuery("Alert")
-	// q := datastore.NewQuery("Alert").Ancestor(alertKey(c)).Order("-date").Limit(10)
+	// q := datastore.NewQuery("Alert").Ancestor(alertKey(c)).Order("-Date").Limit(10)
 	// [END query]
 	// [START getall]
 	alerts := make([]Alert, 0, 10)
