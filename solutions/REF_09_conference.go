@@ -549,7 +549,7 @@ func doAlert(r *http.Request) (*LatestAlert, error) {
 	//Get latest alert and return to user
 	//retrieve latest alert from datastore
 	appCtx := appengine.NewContext(r)
-	q := datastore.NewQuery("Alert").Order("-date")
+	q := datastore.NewQuery("Alert").Order("-Date")
 	var alerts []Alert
 	_, err := q.GetAll(appCtx, &alerts)
 	if err != nil {
