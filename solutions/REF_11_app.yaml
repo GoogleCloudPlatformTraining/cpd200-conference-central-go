@@ -1,5 +1,5 @@
 application: your-project-id
-version: alpha-003
+version: alpha-002
 runtime: go
 api_version: go1
 threadsafe: yes
@@ -37,12 +37,12 @@ handlers:       # static then dynamic
 
 - url: /tasks/send_confirmation_email
   script: _go_app
-  #login: admin
+  login: admin
   secure: always
 
 - url: /crons/set_announcement
   script: _go_app
-  #login: admin
+  login: admin
   secure: always
 
 - url: /_ah/spi/.*
