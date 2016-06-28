@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"log"
 	"appengine"
+	"golang.org/appengine/mail"
 )
 
 func SetAnnouncementHandler(w http.ResponseWriter, r *http.Request) {
