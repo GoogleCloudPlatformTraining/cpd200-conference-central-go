@@ -19,8 +19,8 @@ func SetAnnouncementHandler(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("attempt to access cron handler directly, missing custom App Engine header"))
 		return
 	}
-	cacheAnnouncement(r)
-	w.WriteHeader(http.StatusNoContent)
+	// TODO 1
+	// use cacheAnnouncement() to set announcement in Memcache
 }
 
 func init() {
