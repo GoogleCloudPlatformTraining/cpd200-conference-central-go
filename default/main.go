@@ -2,9 +2,9 @@ package main
 
 import (
 	"net/http"
-	"log"
-	"appengine"
-	"appengine/mail"
+//	"log"
+//	"appengine"
+//	"appengine/mail"
 )
 
 func SetAnnouncementHandler(w http.ResponseWriter, r *http.Request) {
