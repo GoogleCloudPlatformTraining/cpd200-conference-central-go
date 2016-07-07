@@ -68,6 +68,7 @@ func doProfile(r *http.Request, saveRequest *ProfileMiniForm) (*ProfileForm, err
 			prof.TeeShirtSize = TeeShirtSizeToStringEnum(saveRequest.TeeShirtSize)
 		}
 	}
+	
 	//return ProfileForm
 	return copyProfileToForm(r, prof)
 }
