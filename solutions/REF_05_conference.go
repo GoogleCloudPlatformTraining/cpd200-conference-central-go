@@ -65,8 +65,12 @@ func doProfile(r *http.Request, saveRequest *ProfileMiniForm) (*ProfileForm, err
 	
 	//if saveProfile(), process user-modifyable fields
 	if saveRequest != nil {
-		prof.TeeShirtSize = TeeShirtSizeToStringEnum(saveRequest.TeeShirtSize)
-		prof.DisplayName = saveRequest.DisplayName
+		if saveRequest.DisplayName != "" {
+			prof.DisplayName = saveRequest.DisplayName
+		}
+		if TeeShirtSizeToStringEnum(saveRequest.TeeShirtSize) != "" {
+			prof.TeeShirtSize = TeeShirtSizeToStringEnum(saveRequest.TeeShirtSize)
+		}
 	}
 	
 	//return ProfileForm
